@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "020cfe90d5fad9a9a79eafb74c61fa17",
+    "content-hash": "4273a25c287d213121487835675c7f85",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1458,6 +1458,62 @@
                 }
             ],
             "time": "2023-09-06T14:56:25+00:00"
+        },
+        {
+            "name": "nikic/php-parser",
+            "version": "v4.17.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d",
+                "reference": "a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "ircmaxell/php-yacc": "^0.0.7",
+                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
+            },
+            "bin": [
+                "bin/php-parse"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpParser\\": "lib/PhpParser"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/nikic/PHP-Parser/issues",
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.17.1"
+            },
+            "time": "2023-08-13T19:53:39+00:00"
         },
         {
             "name": "psr/cache",
@@ -3165,6 +3221,98 @@
             "time": "2023-09-30T06:37:04+00:00"
         },
         {
+            "name": "symfony/maker-bundle",
+            "version": "v1.51.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/maker-bundle.git",
+                "reference": "0890fd3cf1e2a5221f9b3c6ee1769c537aef683d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/0890fd3cf1e2a5221f9b3c6ee1769c537aef683d",
+                "reference": "0890fd3cf1e2a5221f9b3c6ee1769c537aef683d",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/inflector": "^2.0",
+                "nikic/php-parser": "^4.11",
+                "php": ">=8.1",
+                "symfony/config": "^6.3|^7.0",
+                "symfony/console": "^6.3|^7.0",
+                "symfony/dependency-injection": "^6.3|^7.0",
+                "symfony/deprecation-contracts": "^2.2|^3",
+                "symfony/filesystem": "^6.3|^7.0",
+                "symfony/finder": "^6.3|^7.0",
+                "symfony/framework-bundle": "^6.3|^7.0",
+                "symfony/http-kernel": "^6.3|^7.0",
+                "symfony/process": "^6.3|^7.0"
+            },
+            "conflict": {
+                "doctrine/doctrine-bundle": "<2.4",
+                "doctrine/orm": "<2.10"
+            },
+            "require-dev": {
+                "composer/semver": "^3.0",
+                "doctrine/doctrine-bundle": "^2.5.0",
+                "doctrine/orm": "^2.10.0",
+                "symfony/http-client": "^6.3|^7.0",
+                "symfony/phpunit-bridge": "^6.3|^7.0",
+                "symfony/security-core": "^6.3|^7.0",
+                "symfony/yaml": "^6.3|^7.0",
+                "twig/twig": "^2.0|^3.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bundle\\MakerBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Maker helps you create empty commands, controllers, form classes, tests and more so you can forget about writing boilerplate code.",
+            "homepage": "https://symfony.com/doc/current/bundles/SymfonyMakerBundle/index.html",
+            "keywords": [
+                "code generator",
+                "dev",
+                "generator",
+                "scaffold",
+                "scaffolding"
+            ],
+            "support": {
+                "issues": "https://github.com/symfony/maker-bundle/issues",
+                "source": "https://github.com/symfony/maker-bundle/tree/v1.51.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-09-18T18:17:31+00:00"
+        },
+        {
             "name": "symfony/polyfill-intl-grapheme",
             "version": "v1.28.0",
             "source": {
@@ -3491,6 +3639,67 @@
                 }
             ],
             "time": "2023-08-16T06:22:46+00:00"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v6.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "0b5c29118f2e980d455d2e34a5659f4579847c54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/0b5c29118f2e980d455d2e34a5659f4579847c54",
+                "reference": "0b5c29118f2e980d455d2e34a5659f4579847c54",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Executes commands in sub-processes",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/process/tree/v6.3.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-08-07T10:39:22+00:00"
         },
         {
             "name": "symfony/routing",
@@ -4533,112 +4742,50 @@
     ],
     "packages-dev": [
         {
-            "name": "nikic/php-parser",
-            "version": "v4.17.1",
+            "name": "doctrine/data-fixtures",
+            "version": "1.6.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d"
+                "url": "https://github.com/doctrine/data-fixtures.git",
+                "reference": "ae4e845decbe177348fdbecd04331f4fb96aa301"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d",
-                "reference": "a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d",
+                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/ae4e845decbe177348fdbecd04331f4fb96aa301",
+                "reference": "ae4e845decbe177348fdbecd04331f4fb96aa301",
                 "shasum": ""
             },
             "require": {
-                "ext-tokenizer": "*",
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "ircmaxell/php-yacc": "^0.0.7",
-                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
-            },
-            "bin": [
-                "bin/php-parse"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.9-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "PhpParser\\": "lib/PhpParser"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Nikita Popov"
-                }
-            ],
-            "description": "A PHP parser written in PHP",
-            "keywords": [
-                "parser",
-                "php"
-            ],
-            "support": {
-                "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.17.1"
-            },
-            "time": "2023-08-13T19:53:39+00:00"
-        },
-        {
-            "name": "symfony/maker-bundle",
-            "version": "v1.51.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/maker-bundle.git",
-                "reference": "0890fd3cf1e2a5221f9b3c6ee1769c537aef683d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/0890fd3cf1e2a5221f9b3c6ee1769c537aef683d",
-                "reference": "0890fd3cf1e2a5221f9b3c6ee1769c537aef683d",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/inflector": "^2.0",
-                "nikic/php-parser": "^4.11",
-                "php": ">=8.1",
-                "symfony/config": "^6.3|^7.0",
-                "symfony/console": "^6.3|^7.0",
-                "symfony/dependency-injection": "^6.3|^7.0",
-                "symfony/deprecation-contracts": "^2.2|^3",
-                "symfony/filesystem": "^6.3|^7.0",
-                "symfony/finder": "^6.3|^7.0",
-                "symfony/framework-bundle": "^6.3|^7.0",
-                "symfony/http-kernel": "^6.3|^7.0",
-                "symfony/process": "^6.3|^7.0"
+                "doctrine/deprecations": "^0.5.3 || ^1.0",
+                "doctrine/persistence": "^1.3.3 || ^2.0 || ^3.0",
+                "php": "^7.2 || ^8.0"
             },
             "conflict": {
-                "doctrine/doctrine-bundle": "<2.4",
-                "doctrine/orm": "<2.10"
+                "doctrine/dbal": "<2.13",
+                "doctrine/orm": "<2.14",
+                "doctrine/phpcr-odm": "<1.3.0"
             },
             "require-dev": {
-                "composer/semver": "^3.0",
-                "doctrine/doctrine-bundle": "^2.5.0",
-                "doctrine/orm": "^2.10.0",
-                "symfony/http-client": "^6.3|^7.0",
-                "symfony/phpunit-bridge": "^6.3|^7.0",
-                "symfony/security-core": "^6.3|^7.0",
-                "symfony/yaml": "^6.3|^7.0",
-                "twig/twig": "^2.0|^3.0"
+                "doctrine/coding-standard": "^11.0",
+                "doctrine/dbal": "^2.13 || ^3.0",
+                "doctrine/mongodb-odm": "^1.3.0 || ^2.0.0",
+                "doctrine/orm": "^2.14",
+                "ext-sqlite3": "*",
+                "phpstan/phpstan": "^1.5",
+                "phpunit/phpunit": "^8.5 || ^9.5 || ^10.0",
+                "symfony/cache": "^5.0 || ^6.0",
+                "vimeo/psalm": "^4.10 || ^5.9"
             },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.x-dev"
-                }
+            "suggest": {
+                "alcaeus/mongo-php-adapter": "For using MongoDB ODM 1.3 with PHP 7 (deprecated)",
+                "doctrine/mongodb-odm": "For loading MongoDB ODM fixtures",
+                "doctrine/orm": "For loading ORM fixtures",
+                "doctrine/phpcr-odm": "For loading PHPCR ODM fixtures"
             },
+            "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Symfony\\Bundle\\MakerBundle\\": "src/"
+                    "Doctrine\\Common\\DataFixtures\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4647,64 +4794,73 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
                 }
             ],
-            "description": "Symfony Maker helps you create empty commands, controllers, form classes, tests and more so you can forget about writing boilerplate code.",
-            "homepage": "https://symfony.com/doc/current/bundles/SymfonyMakerBundle/index.html",
+            "description": "Data Fixtures for all Doctrine Object Managers",
+            "homepage": "https://www.doctrine-project.org",
             "keywords": [
-                "code generator",
-                "dev",
-                "generator",
-                "scaffold",
-                "scaffolding"
+                "database"
             ],
             "support": {
-                "issues": "https://github.com/symfony/maker-bundle/issues",
-                "source": "https://github.com/symfony/maker-bundle/tree/v1.51.1"
+                "issues": "https://github.com/doctrine/data-fixtures/issues",
+                "source": "https://github.com/doctrine/data-fixtures/tree/1.6.7"
             },
             "funding": [
                 {
-                    "url": "https://symfony.com/sponsor",
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
                 {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
                 },
                 {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fdata-fixtures",
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-09-18T18:17:31+00:00"
+            "time": "2023-08-17T21:15:33+00:00"
         },
         {
-            "name": "symfony/process",
-            "version": "v6.3.4",
+            "name": "doctrine/doctrine-fixtures-bundle",
+            "version": "3.4.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/process.git",
-                "reference": "0b5c29118f2e980d455d2e34a5659f4579847c54"
+                "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
+                "reference": "9ec3139c52a42e94c9fd1e95f8d2bca94326edfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/0b5c29118f2e980d455d2e34a5659f4579847c54",
-                "reference": "0b5c29118f2e980d455d2e34a5659f4579847c54",
+                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/9ec3139c52a42e94c9fd1e95f8d2bca94326edfb",
+                "reference": "9ec3139c52a42e94c9fd1e95f8d2bca94326edfb",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "doctrine/data-fixtures": "^1.3",
+                "doctrine/doctrine-bundle": "^1.11|^2.0",
+                "doctrine/orm": "^2.6.0",
+                "doctrine/persistence": "^1.3.7|^2.0|^3.0",
+                "php": "^7.1 || ^8.0",
+                "symfony/config": "^3.4|^4.3|^5.0|^6.0",
+                "symfony/console": "^3.4|^4.3|^5.0|^6.0",
+                "symfony/dependency-injection": "^3.4.47|^4.3|^5.0|^6.0",
+                "symfony/doctrine-bridge": "^3.4|^4.1|^5.0|^6.0",
+                "symfony/http-kernel": "^3.4|^4.3|^5.0|^6.0"
             },
-            "type": "library",
+            "require-dev": {
+                "doctrine/coding-standard": "^9",
+                "phpstan/phpstan": "^1.4.10",
+                "phpunit/phpunit": "^7.5.20 || ^8.5.26 || ^9.5.20",
+                "symfony/phpunit-bridge": "^6.0.8",
+                "vimeo/psalm": "^4.22"
+            },
+            "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
-                    "Symfony\\Component\\Process\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
+                    "Doctrine\\Bundle\\FixturesBundle\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4716,30 +4872,39 @@
                     "email": "fabien@symfony.com"
                 },
                 {
+                    "name": "Doctrine Project",
+                    "homepage": "https://www.doctrine-project.org"
+                },
+                {
                     "name": "Symfony Community",
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Executes commands in sub-processes",
-            "homepage": "https://symfony.com",
+            "description": "Symfony DoctrineFixturesBundle",
+            "homepage": "https://www.doctrine-project.org",
+            "keywords": [
+                "Fixture",
+                "persistence"
+            ],
             "support": {
-                "source": "https://github.com/symfony/process/tree/v6.3.4"
+                "issues": "https://github.com/doctrine/DoctrineFixturesBundle/issues",
+                "source": "https://github.com/doctrine/DoctrineFixturesBundle/tree/3.4.4"
             },
             "funding": [
                 {
-                    "url": "https://symfony.com/sponsor",
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
                     "type": "custom"
                 },
                 {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
                 },
                 {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fdoctrine-fixtures-bundle",
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-07T10:39:22+00:00"
+            "time": "2023-05-02T15:12:16+00:00"
         }
     ],
     "aliases": [],
